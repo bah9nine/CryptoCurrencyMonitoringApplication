@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InfoCell" rowHeight="53" id="pJG-ed-wnx" customClass="InfoCell" customModule="CryptoExchangeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJG-ed-wnx" id="dz8-Ve-Tcb">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWd-89-3AQ" userLabel="CoinInfo">
+                        <rect key="frame" x="0.0" y="0.0" width="42" height="53"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="C2s-Z0-IK9" userLabel="Value">
+                        <rect key="frame" x="372" y="0.0" width="42" height="53"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="C2s-Z0-IK9" secondAttribute="trailing" id="6G6-U4-c2Q"/>
+                    <constraint firstItem="C2s-Z0-IK9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bWd-89-3AQ" secondAttribute="trailing" constant="10" id="C3m-5p-VQR"/>
+                    <constraint firstItem="bWd-89-3AQ" firstAttribute="leading" secondItem="dz8-Ve-Tcb" secondAttribute="leading" id="LKb-i4-Fen"/>
+                    <constraint firstItem="C2s-Z0-IK9" firstAttribute="top" secondItem="dz8-Ve-Tcb" secondAttribute="top" id="XAc-lS-TG2"/>
+                    <constraint firstItem="bWd-89-3AQ" firstAttribute="top" secondItem="dz8-Ve-Tcb" secondAttribute="top" id="XJs-l8-YSh"/>
+                    <constraint firstAttribute="bottom" secondItem="bWd-89-3AQ" secondAttribute="bottom" id="o5h-FY-I0h"/>
+                    <constraint firstAttribute="bottom" secondItem="C2s-Z0-IK9" secondAttribute="bottom" id="rdE-Ri-VDp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="coinInfoLabel" destination="bWd-89-3AQ" id="9JH-jQ-Lvd"/>
+                <outlet property="valueLabel" destination="C2s-Z0-IK9" id="lr5-el-9H5"/>
+            </connections>
+            <point key="canvasLocation" x="66.666666666666671" y="58.59375"/>
+        </tableViewCell>
+    </objects>
+</document>

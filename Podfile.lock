@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (5.4.1)
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
+  - Kingfisher (6.2.1)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - ObjectMapper (4.2.0)
+  - QuickLayout (3.0.0)
+  - SwiftEntryKit (1.2.7):
+    - QuickLayout (= 3.0.0)
+  - ViperMcFlurry (1.5.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - Charts
+  - Kingfisher
+  - NVActivityIndicatorView
+  - ObjectMapper
+  - SwiftEntryKit
+  - ViperMcFlurry
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Charts
+    - Kingfisher
+    - NVActivityIndicatorView
+    - ObjectMapper
+    - QuickLayout
+    - SwiftEntryKit
+    - ViperMcFlurry
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
+  Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
+  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+  ViperMcFlurry: 701bc3ad8d188b1f1e157ec0ddf4e77184de88b5
+
+PODFILE CHECKSUM: 68c354acb921cc8ce553f60286cad0773e407a7b
+
+COCOAPODS: 1.10.1

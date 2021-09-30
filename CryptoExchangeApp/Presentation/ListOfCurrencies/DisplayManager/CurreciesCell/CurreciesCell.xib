@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurreciesCell" rowHeight="101" id="6dy-lu-kbu" customClass="CurreciesCell" customModule="CryptoExchangeApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6dy-lu-kbu" id="IJC-yX-2YM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oQT-bD-2f6" userLabel="Icon">
+                        <rect key="frame" x="20" y="20" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="oQT-bD-2f6" secondAttribute="height" id="ke1-e6-iyI"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hfL-70-yBd" userLabel="Name Stack View">
+                        <rect key="frame" x="110" y="26" width="81" height="48.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FTT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4V-fL-Y19" userLabel="Symbol">
+                                <rect key="frame" x="0.0" y="0.0" width="81" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FTX Token " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98D-9y-fSE" userLabel="Name">
+                                <rect key="frame" x="0.0" y="29" width="81" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aMH-96-CPX" userLabel="Price Stack View">
+                        <rect key="frame" x="328.5" y="26" width="65.5" height="48.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 1.94" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zni-NU-DfI" userLabel="Price">
+                                <rect key="frame" x="0.0" y="0.0" width="65.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+ 2.95% " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KBe-ti-MgG" userLabel="PriceChange">
+                                <rect key="frame" x="0.0" y="29" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oQT-bD-2f6" firstAttribute="leading" secondItem="IJC-yX-2YM" secondAttribute="leading" constant="20" id="Abs-4z-Qj6"/>
+                    <constraint firstItem="oQT-bD-2f6" firstAttribute="top" secondItem="IJC-yX-2YM" secondAttribute="top" constant="20" id="ESW-ZR-FXR"/>
+                    <constraint firstItem="hfL-70-yBd" firstAttribute="leading" secondItem="oQT-bD-2f6" secondAttribute="trailing" constant="30" id="Egl-32-wMh"/>
+                    <constraint firstItem="aMH-96-CPX" firstAttribute="centerY" secondItem="hfL-70-yBd" secondAttribute="centerY" id="IiY-y0-SF4"/>
+                    <constraint firstAttribute="trailing" secondItem="aMH-96-CPX" secondAttribute="trailing" constant="20" id="O5S-II-iH5"/>
+                    <constraint firstAttribute="bottom" secondItem="oQT-bD-2f6" secondAttribute="bottom" constant="20" id="W73-In-ACd"/>
+                    <constraint firstItem="hfL-70-yBd" firstAttribute="centerY" secondItem="oQT-bD-2f6" secondAttribute="centerY" id="pPn-IK-owQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="oQT-bD-2f6" id="c7G-1s-ufP"/>
+                <outlet property="nameLabel" destination="98D-9y-fSE" id="LwB-be-1bB"/>
+                <outlet property="priceChangeLabel" destination="KBe-ti-MgG" id="XOF-Kf-GWl"/>
+                <outlet property="priceLabel" destination="Zni-NU-DfI" id="wP7-fO-8jN"/>
+                <outlet property="symbolLabel" destination="Z4V-fL-Y19" id="wbh-Qy-pdV"/>
+            </connections>
+            <point key="canvasLocation" x="-452.17391304347831" y="38.504464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

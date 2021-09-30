@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H1t-gE-NUp">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite View Controller-->
+        <scene sceneID="Cna-j2-Oed">
+            <objects>
+                <viewController id="HAo-Pj-dvk" customClass="FavoriteViewController" customModule="CryptoExchangeApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="69A-Tp-0fY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Список пуст. Добавьте криптовалюту в избранное, чтобы увидеть ее здесь." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edn-Is-vzj">
+                                <rect key="frame" x="20" y="407" width="374" height="82.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kjd-7h-Fwy"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="edn-Is-vzj" firstAttribute="centerY" secondItem="69A-Tp-0fY" secondAttribute="centerY" id="690-Jt-s6F"/>
+                            <constraint firstItem="edn-Is-vzj" firstAttribute="leading" secondItem="69A-Tp-0fY" secondAttribute="leading" constant="20" id="Eq5-DY-MQ4"/>
+                            <constraint firstItem="edn-Is-vzj" firstAttribute="centerX" secondItem="69A-Tp-0fY" secondAttribute="centerX" id="dru-eZ-lQn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iux-rF-n7e"/>
+                    <connections>
+                        <outlet property="emptyListMassageLabel" destination="edn-Is-vzj" id="JUB-EG-ocV"/>
+                        <segue destination="g1a-uS-BYE" kind="show" identifier="favoriteSegue" id="Uos-Lg-7xJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V5c-oB-ow8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="YKW-fI-h9e" customClass="FavoriteModuleInitializer" customModule="CryptoExchangeApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="favoriteViewController" destination="HAo-Pj-dvk" id="p4d-eS-Nkd"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="945" y="1566"/>
+        </scene>
+        <!--DetailedInformationViewController-->
+        <scene sceneID="8iM-72-weg">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CryptocurrencyList" referencedIdentifier="DetailedInformationViewController" id="g1a-uS-BYE" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vlE-25-wfY"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EAs-Dh-H8L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="2014"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="Idw-hz-fvN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="H1t-gE-NUp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorite" image="heart.fill" catalog="system" id="bzr-o3-yIm"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VoD-hP-NIe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HAo-Pj-dvk" kind="relationship" relationship="rootViewController" id="M4n-1e-cTT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVZ-vs-1h6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.85981308411215" y="827.42980561555078"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+    </resources>
+</document>
