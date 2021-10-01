@@ -6,6 +6,6 @@ ___
 
 # Technologies
 
-## CoreData, Alamofier, Kingfisher, ObjectMapper, SwiftEntryKit, NVActivityIndicatorView, ViperMCFlurry
+## CoreData, Alamofier, Kingfisher, ObjectMapper, SwiftEntryKit, NVActivityIndicatorView, ViperMCFlurry, Charts
 
 
